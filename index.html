@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>네이버 블로그 구매</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      margin: 0;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+    .fixed-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #1abc9c;
+      color: white;
+      padding: 0.8rem;
+      text-align: center;
+      z-index: 1000;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://cdn.imweb.me/thumbnail/20230712/bf6be2355f4d4.png') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 80px;
+      color: white;
+    }
+    .hero h1 {
+      background-color: rgba(0,0,0,0.6);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      font-size: 2.2rem;
+    }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .section {
+      background: white;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+    }
+    .cta-button button {
+      margin: 1rem 0.5rem;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      background-color: #ff8c00;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .cta-button button:hover {
+      background-color: #e67e22;
+    }
+    .contact-info {
+      margin-top: 1.5rem;
+      font-size: 1.1rem;
+    }
+    .scroll-table-container {
+      max-height: 300px;
+      overflow: hidden;
+      position: relative;
+    }
+    .record-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 1.1rem;
+      animation: scrollRecords 20s linear infinite;
+    }
+    .record-table th, .record-table td {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      text-align: center;
+    }
+    .record-table th {
+      background-color: #2ecc71;
+      color: white;
+    }
+    .record-highlight {
+      background-color: #ecf9f1;
+      font-weight: bold;
+    }
+    @keyframes scrollRecords {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-50%); }
+    }
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #2c3e50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="fixed-bar">💼 실시간 블로그 거래내역 확인: 신뢰도 높은 구매 이력!</div>
+
+  <div class="hero">
+    <h1>네이버 블로그 매입</h1>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <h2>📌 블로그 매입 안내</h2>
+      <p>사용하지 않는 블로그, 지금 판매하시면 일정 기간 후 되찾을 수 있습니다.</p>
+      <p>특별 상황 시에는 문의 후 아이디 사용이 가능합니다.</p>
+      <div class="cta-button">
+        <button onclick="window.location.href='https://open.kakao.com/o/s0LpiLxh'">카카오톡 문의</button>
+        <button onclick="window.location.href='https://open.kakao.com/o/s0LpiLxh'">추천하기</button>
+      </div>
+      <div class="contact-info">
+        📞 연락처: 010-2595-7267<br>
+        💬 카카오톡 ID: ek4562
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>✅ 블로그 거래 내역</h2>
+      <div class="scroll-table-container">
+        <table class="record-table">
+          <thead>
+            <tr>
+              <th>날짜</th>
+              <th>블로그명</th>
+              <th>거래상태</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="record-highlight"><td>2025-05-01</td><td>블로그 A (생활)</td><td>매입 완료</td></tr>
+            <tr><td>2025-05-03</td><td>블로그 B (패션)</td><td>매입 완료</td></tr>
+            <tr class="record-highlight"><td>2025-05-05</td><td>블로그 C (리뷰)</td><td>매입 완료</td></tr>
+            <tr><td>2025-05-08</td><td>블로그 D (여행)</td><td>매입 완료</td></tr>
+            <tr class="record-highlight"><td>2025-05-12</td><td>블로그 E (육아)</td><td>매입 완료</td></tr>
+            <tr><td>2025-05-14</td><td>블로그 F (요리)</td><td>매입 완료</td></tr>
+            <tr class="record-highlight"><td>2025-05-15</td><td>블로그 G (뷰티)</td><td>매입 완료</td></tr>
+            <tr><td>2025-05-16</td><td>블로그 H (IT)</td><td>매입 완료</td></tr>
+            <tr class="record-highlight"><td>2025-05-17</td><td>블로그 I (자동차)</td><td>매입 완료</td></tr>
+            <tr><td>2025-05-18</td><td>블로그 J (건강)</td><td>매입 완료</td></tr>
+            <tr class="record-highlight"><td>2025-05-19</td><td>블로그 K (취미)</td><td>매입 완료</td></tr>
+            <tr><td>2025-05-20</td><td>블로그 L (여행)</td><td>매입 완료</td></tr>
+            <tr class="record-highlight"><td>2025-05-21</td><td>블로그 M (리뷰)</td><td>매입 완료</td></tr>
+            <tr><td>2025-05-22</td><td>블로그 N (생활)</td><td>매입 완료</td></tr>
+            <tr class="record-highlight"><td>2025-05-23</td><td>블로그 O (패션)</td><td>매입 완료</td></tr>
+            <tr><td>2025-05-24</td><td>블로그 P (게임)</td><td>매입 완료</td></tr>
+            <tr class="record-highlight"><td>2025-05-25</td><td>블로그 Q (영화)</td><td>매입 완료</td></tr>
+            <tr><td>2025-05-26</td><td>블로그 R (음악)</td><td>매입 완료</td></tr>
+            <tr class="record-highlight"><td>2025-05-27</td><td>블로그 S (사진)</td><td>매입 완료</td></tr>
+            <tr><td>2025-05-28</td><td>블로그 T (운동)</td><td>매입 완료</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>💰 추천 보상 안내</h2>
+      <p>블로그 판매 후 <strong>다른 사람을 소개</strong>해주시면 <span style="color: #e74c3c; font-weight: bold;">10만원</span>을 드립니다!</p>
+    </div>
+  </div>
+
+  <div class="footer">© 2025 네이버 블로그 매입 전문</div>
+</body>
+</html>
